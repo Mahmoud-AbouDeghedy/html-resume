@@ -11,7 +11,8 @@
   --page-width: 8.5in;
   --page-height: 11in;
   --main-width: 6.4in;
-  --sidebar-width: calc(var(--page-width) - var(--main-width));
+  --sidebar-width: calc(var(
+  --page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
   --sidebar-horizontal-padding: 0.2in;
@@ -171,16 +172,18 @@ li{
 
 .date span{
   display: block;
+  /* width: max-content; */
 }
 
 .date span:nth-child(2)::before{
+  content: '|';
   position: relative;
   top: 1pt;
   right: 5.5pt;
   display: block;
   height: 10pt;
-  content: '|';
 }
+
 
 .decorator{
   flex: 0 0 0;
